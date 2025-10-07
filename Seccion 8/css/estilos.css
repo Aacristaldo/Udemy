@@ -1,0 +1,31 @@
+/* 
+*{
+    margin: 0;
+    padding: 0;
+} */
+.titulo{
+    color: #f72585;
+    text-align: center;
+    margin: 10px;
+}
+
+h2{
+    color:#3f37c9
+}
+
+p{
+    color:#457b9d
+}
+.tarjeta{
+    border:10px solid #0fce16;
+    background-color: #f1faee;
+    text-align: center;
+    margin: 15px 100px;
+    padding: 15px;
+}
+
+.tarjetados{
+    border :50px solid #e31482;
+    background-color: #f1faee;
+    text-align: center;
+}
