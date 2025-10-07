@@ -2,23 +2,36 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pulse Rebelde</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PULSE | Merch auténtico</title>
+  <meta name="theme-color" content="#0a0f0a" />
 
   <!-- Fuente -->
-  <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bungee:wght@400&display=swap" rel="stylesheet" />
 
   <!-- CSS -->
   <link rel="stylesheet" href="/PulsoRebelde/estilos/style.css" />
 </head>
 <body>
-  <header class="hero">
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="#home" class="brand">PULSE</a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="#home">Inicio</a></li>
+      <li><a href="#esencia">Esencia</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header id="home" class="hero">
     <section class="frases">
       <!-- Frase 1 -->
       <div id="f1" class="line show">
         <h1 class="banner">
           <span class="row left  glitch">QUE TU PRENDA</span>
-          <span class="row center glitch">NO TE</span>
+          <span class="row center glitch">NO</span>
           <span class="row right glitch big">REPRENDA</span>
         </h1>
       </div>
@@ -32,7 +45,52 @@
         </h1>
       </div>
     </section>
+
+    <!-- Arte flotante (usa tus imágenes en /assets/) -->
+    <!-- Reemplaza las rutas por:
+      /assets/megafono-1.jpg     (hombre con megáfono)
+      /assets/aplausos.jpg       (manos aplaudiendo bordeado)
+      /assets/manos-alzadas.jpg  (manos levantadas)
+      /assets/gaviota-cartel.jpg (gaviota sobre señal)
+      /assets/megafono-2.jpg     (megáfono punteado)
+    -->
+    <div class="bg-art a1" aria-hidden="true"></div>
+    <div class="bg-art a2" aria-hidden="true"></div>
+    <div class="bg-art a3" aria-hidden="true"></div>
+    <div class="bg-art a4" aria-hidden="true"></div>
+    <div class="bg-art a5" aria-hidden="true"></div>
   </header>
+
+  <!-- ESENCIA -->
+  <section id="esencia" class="esencia">
+    <div class="wrap">
+      <h2>Autenticidad en cada pulso</h2>
+      <p class="lead">
+        ¿Moda? ¿Tendencias? Todo eso es ruido si no sos vos. Que tu prenda no te reprenda por ser diferente.
+        Que tu prenda te desprenda de lo que no te representa. Acá no venís a encajar. Venís a destacarte.
+      </p>
+     <div class="pillars products">
+        <article class="card">
+          <figure class="card-media"><img src="/PulsoRebelde/assets/pilares-libre.jpg" alt="Libre"></figure>
+          <h3>Libre</h3>
+          <p class="sub">Siluetas que rompen guiones</p>
+        </article>
+
+        <article class="card">
+          <figure class="card-media"><img src="/PulsoRebelde/assets/pilares-crudo.jpg" alt="Crudo"></figure>
+          <h3>Crudo</h3>
+          <p class="sub">Texturas reales</p>
+        </article>
+
+        <article class="card">
+          <figure class="card-media"><img src="/PulsoRebelde/assets/pilares-propio.jpg" alt="Propio"></figure>
+          <h3>Propio</h3>
+          <p class="sub">Habla de vos</p>
+        </article>
+      </div>
+
+    </div>
+  </section>
 
   <!-- JS -->
   <script src="/PulsoRebelde/js/script.js"></script>
